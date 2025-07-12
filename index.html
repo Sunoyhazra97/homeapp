@@ -10,8 +10,10 @@
 <style>
   .mystyle{
     display:flex;
-    margin-left: 50px;
-  }
+  
+    margin:auto;
+    
+    }
 
   a:link{
     color:white;
@@ -19,21 +21,24 @@
   
 
   .loginbox {
-      position: absolute;
-      right: 25px;
-      top: 50%;
+      
+     
+      bottom: 50%;
       transform: translateY(-50%);
+      width:auto;
+      margin:auto;
+
     }
     .offer{
       font-size: 14px;
     }
     .explore{
-      padding-top: 1px;
+      padding-top: 0px;
 
     }
     .navbar-brand{
-      padding-right:10px;
-
+      padding-right:100px;
+      margin-left:50px;
 
     }
 body{
@@ -49,21 +54,28 @@ body{
       align-items: center;
       gap:10px;
     }
+    
+    .img-fluid {
+      max-height: 250px;
+      object-fit:cover;
+    }
+
     input[type="text"]{
-      padding:2px;
+      padding:5px;
       font-size:16px;
-     
       border-radius:5px;
-      width:100px;
+      
       transition:0.3s;
+      width:100%;
+     
     }
     input[type="text"]:focus{
       border-color:black;
-      }
-      
-.banner{
-  
-}
+      }  
+.close-btn:hover{
+        cursor:pointer;
+    }
+   
 </style>
 <body>
 
@@ -77,7 +89,7 @@ body{
       <nav class="navbar bg-body-dark">
         <div class="search-container">
           <input type="text" id="searchInput" placeholder="Search...">
-          <button id="searchBtn ">Search</button>
+          <button id="searchBtn">Search</button>
         </div>
       </nav>
       
@@ -102,58 +114,55 @@ body{
         </ul>
       </div>
     </div>
-    <div class="">
-    <a href="log.html" class="btn btn-outline-light btn-sm mx-5 loginbox">Login/Sign up</a>
-
-    </div>
-    
-
-  </nav>
+    </nav>
   
-
-  <script>
-    
-  </script>
-
-
   <!-- Hero Section -->
-   <div class="offer-bar d-flex justify-content-center px-5 py-2 text-gray">
+   <div class="offer-bar d-flex justify-content-center  align-items-center flex-wrap  px-5 py-2  bg-warning ">
   
   <div class="offer-banner text-dark text-center px-3 py-0">
     🎉 Extra 60% OFF on All Home Services
   </div>
   <button class="btn btn-dark btn-sm explore-btn mx-2 explore">Explore Offers</button>
 </div>
-<div class="banner">
+
+
 
 
   <header class="bg-light text-center py-5">
     <div class="container">
       <h1 class="display-4">Your Home, Our Care</h1>
       <p class="lead">Professional cleaning, cooking, and home services at your fingertips.</p>
-      <a href="#contact" class="btn btn-dark btn-lg">Book a Service</a>
-    </div>
+      <a href="#contact" class="btn btn-dark btn-lg">Book a Service</a><br>
+    <a href="log.html" class="btn btn-outline-dark btn-sm  loginbox mt-4">Login/Sign up</a>
+   
 
+  
   </header>
   </div>
 
   <!-- Services Section -->
   <section id="services" class="py-5 bg-white">
     <div class="container">
-      <h2 class="text-center mb-4">Our Services</h2>
+      <h2 class="text-center mb-5">Our Services</h2>
+
+      
       <div class="row text-center">
-        <div class="col-md-4">
-          <img src="images/cleaning.jpg" alt="Cleaning" class="mb-3" width="400">
-          <h4>House Cleaning</h4>
-          <p>Deep cleaning, regular maintenance, and more tailored to your needs.</p>
+        <div class="col-md-4 ">
+          <img src="images/cleaning.jpg"  class="mb-3  close-btn" width="400">
+          <div class="card-body text-center">
+          <h4 class="card-title">House Cleaning</h4>
+          <p class="card-text">Deep cleaning, regular maintenance, and more tailored to your needs.</p>
         </div>
+</div>
+
         <div class="col-md-4">
-          <img src="images/cooking3.jpeg" alt="Cooking" class="mb-3" width="400">
+          <img src="images/cooking3.jpeg"   class="mb-3  close-btn" width="400">
           <h4>Cooking Services</h4>
           <p>Home-cooked meals by expert chefs for families and individuals.</p>
         </div>
+
         <div class="col-md-4">
-          <img src="images/laundry3.jpg" alt="Laundry" class="mb-3" width="400">
+          <img src="images/laundry3.jpg"  class="mb-3  close-btn" width="400">
           <h4>Laundry & Ironing</h4>
           <p>Pickup and delivery laundry and ironing service at your convenience.</p>
         </div>
@@ -161,53 +170,58 @@ body{
 
       <div class="row text-center">
         <div class="col-md-4">
-          <img src="images/housemaid.png" alt="Cleaning" class="mb-3" width="400">
+          <img src="images/housemaid.png" class="mb-3  close-btn" width="400">
           <h4>House Maid</h4>
-          <p>Deep cleaning, regular maintenance, and more tailored to your needs.</p>
+          <p>"Reliable and professional housemaid services to keep your home clean,  and stress-free
+.</p>
         </div>
         <div class="col-md-4">
-          <img src="images/eldercare.jpg" alt="Cooking" class="mb-3" width="400">
+          <img src="images/eldercare.jpg" class="mb-3  close-btn" width="400">
           <h4>Elder Care</h4>
-          <p>Home-cooked meals by expert chefs for families and individuals.</p>
+          <p>Compassionate eldercare services providing support, companionship, and assistance for your loved ones.</p>
         </div>
         <div class="col-md-4">
-          <img src="images/nanny.jpg" alt="Laundry" class="mb-3" width="400">
+          <img src="images/nanny.jpg" class="mb-3  close-btn" width="400">
           <h4>Nanny</h4>
-          <p>Pickup and delivery laundry and ironing service at your convenience.</p>
+          <p>"Trustworthy nanny services offering personalized care, nurturing, and support for your child's growth.
+</p>
         </div>
       </div>
       <div class="row text-center">
         <div class="col-md-4">
-          <img src="images/patientcaretaker.jpg" alt="Cleaning" class="mb-3" width="400">
+          <img src="images/patientcaretaker.jpg" class="mb-3  close-btn" width="400">
           <h4>Patient Caretaker</h4>
-          <p>Deep cleaning, regular maintenance, and more tailored to your needs.</p>
+          <p>"Experienced patient caretakers providing dedicated, compassionate care to ensure comfort and well-being.</p>
         </div>
         <div class="col-md-4">
-          <img src="images/kitchencleaning.jpg" alt="Cooking" class="mb-3" width="400">
+          <img src="images/kitchencleaning.jpg"  class="mb-3  close-btn" width="400">
           <h4>Kitchen Cleaning</h4>
-          <p>Home-cooked meals by expert chefs for families and individuals.</p>
+          <p>"Thorough kitchen cleaning services to keep your cooking space spotless,and ready for use.
+</p>
         </div>
         <div class="col-md-4">
-          <img src="images/babysitters.jpg" alt="Laundry" class="mb-3" width="400">
+          <img src="images/babysitters.jpg"  class="mb-3  close-btn" width="400">
           <h4>babby Sitters</h4>
-          <p>Pickup and delivery laundry and ironing service at your convenience.</p>
+          <p>"Reliable babysitter services offering safe, fun, and caring supervision for your little ones.</p>
         </div>
       </div>
       <div class="row text-center">
         <div class="col-md-4">
-          <img src="images/nurse.jpg" alt="Cleaning" class="mb-3" width="400">
+          <img src="images/nurse.jpg"  class="mb-3  close-btn" width="400">
           <h4>Nurse</h4>
-          <p>Deep cleaning, regular maintenance, and more tailored to your needs.</p>
+          <p>"Qualified nursing services delivering professional medical care, support.</p>
         </div>
         <div class="col-md-4">
-          <img src="images/electrician.jpg" alt="Cooking" class="mb-3" width="400">
+          <img src="images/electrician.jpg"  class="mb-3  close-btn" width="400">
           <h4>Electrician</h4>
-          <p>Home-cooked meals by expert chefs for families and individuals.</p>
+          <p>"Skilled electrician services for safe, efficient, and reliable electrical installations.
+</p>
         </div>
         <div class="col-md-4">
-          <img src="images/ACservice.jpg" alt="Laundry" class="mb-3" width="400">
+          <img src="images/ACservice.jpg"  class="mb-3  close-btn" width="400">
           <h4>Ac Service</h4>
-          <p>Pickup and delivery laundry and ironing service at your convenience.</p>
+          <p>"Expert AC services ensuring efficient cooling through professional installation.
+</p>
         </div>
       </div>
     </div>
@@ -226,8 +240,8 @@ body{
     <div class="container">
       <h2 class="text-center mb-4">Contact Us</h2>
       <form>
-        <div class="row mb-3 ">
-          <div class="col-md-6 ">
+        <div class="row mb-4 ">
+          <div class="col-md-6 mb-3 mb-md-0 ">
             <input type="text" class="form-control" placeholder="Full Name" required>
           </div>
           <div class="col-md-6">
@@ -260,9 +274,9 @@ body{
       <div class="col-md-4 mb-3">
         <h5>Contact Us</h5>
         <ul class="list-unstyled">
-          <li><i class="bi bi-telephone"></i> (123) 456-7890</li>
-          <li><i class="bi bi-envelope"></i> support@homecareservices.com</li>
-          <li><i class="bi bi-geo-alt"></i> 123 GT Road, Dilshad Garden,India</li>
+          <li><i class="bi bi-telephone"></i> 📞(123) 456-7890</li>
+          <li><i class="bi bi-envelope"></i>✉️  support@homecareservices.com</li>
+          <li><i class="bi bi-geo-alt"></i> 📍 123 GT Road, Dilshad Garden,India</li>
         </ul>
       </div>
 
